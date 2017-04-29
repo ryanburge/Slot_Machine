@@ -7,6 +7,11 @@ library(fuzzyjoin)
 library(readr)
 library(ggmap)
 
+# Read in the data, but skip the first three rows
+###slots <- read_csv("vg1.csv", skip =3)
+# Delete all the county rows
+###slots[ grep("County", slots$Municipality, invert = TRUE) , ]
+
 
 url <- "https://en.wikipedia.org/wiki/List_of_cities_in_Illinois"
 ill <- url %>%
