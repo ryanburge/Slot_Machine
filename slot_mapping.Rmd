@@ -5,6 +5,9 @@ date: "April 28, 2017"
 output: html_document
 ---
 
+## Here is the static map, scroll down for the interactive version. 
+
+![Here is a screeshot of the final product](https://raw.githubusercontent.com/ryanburge/Slot_Machine/master/screenshot.png)
 
 ```{r message=FALSE, warning=FALSE, fig.align='center', fig.width=9, fig.height=8}
 library(ggplot2)
