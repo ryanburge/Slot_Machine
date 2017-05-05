@@ -23,9 +23,9 @@ ill <- ill[[1]]
 
 ill$pop <- as.numeric(gsub(",", "", ill$Population))
 
-slots <- read_csv("D://pls2003_sp17/slots.csv")
+slots <- read_csv("https://raw.githubusercontent.com/ryanburge/Slot_Machine/master/slots.csv")
 
-slots$Name <- slots$Municipality
+slots <- slots %>% rename(Name = Municipality)
 
 #merge <- merge(slots, ill, by=c("Name"))
 
